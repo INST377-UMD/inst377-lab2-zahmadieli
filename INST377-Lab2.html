@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>made.com</title>
+        <style>
+            body{
+                background-color: beige;
+               
+                
+                
+            }
+            .order-placed-box {
+                border: 2px solid black; 
+                     
+                       
+                display: inline-block;   
+            }
+            input[type="submit"].submit {
+                background-color: lightpink;
+                
+            }
+            input[type="submit"].submit:hover {
+            background-color: hotpink;
+            color: white;
+            }
+ß
+        </style>
+    </head>
+
+    <body>
+        <h1>Checkout</h1>
+        <form name="contactForm" method="get" action="INST377-FormSuccess.html">
+            <div class="contact">
+            
+                <label for="reason">Continue as:</label><br>
+                <input type="radio" name="reason" id="member" value="Member">Member<br>
+                <input type="radio" name="reason" id="guest" value="Guest">Guest
+
+            <hr>
+            
+        
+           
+            
+
+            <!-- Address -->
+            <h3>Shipping Address</h3>
+            <lable for="firstName">First Name:</lable>
+            <input type="text" id="firstName" required>
+            <br>
+            <lable for="lastName">Last Name:</lable>
+            <input type="text" id="lastName" required>
+            <br>
+            <label for="street">Street:</label>
+            <input type="text" id="street"><br>
+            <label for="city">City:</label>
+            <input type="text" id="city"><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" maxlength="2"><br>
+            <label for="zip">Zip:</label>
+            <input type="text" id="zip" maxlength="5"><br>
+            <br>
+            <hr>
+
+            <!-- payment -->
+            <label for="payment">Payment:</label>
+            <select id="payment" name="payment">
+                <option hidden>--Select Option--</option>
+                <option value="paypal">PayPal</option>
+                <option value="Credit">Credit Card</option>
+                <option value="Apple">Apple Pay</option>
+            </select>
+            <br><br>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="test@gmail.com" required>
+            
+
+
+            </div>
+            <div class="order-placed-box">
+                <input type="submit" class="submit" value="OrderPlaced">
+            </div>
+
+        </form>
+
+    </body>
+</html>
